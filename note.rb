@@ -5,11 +5,11 @@ class Post
   end
 
   def read_from_console
-
+    #todo
   end
 
   def to_string
-
+    #todo
   end
 
   def file_patch
