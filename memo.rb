@@ -1,3 +1,4 @@
+require 'date'
 class Memo < Post
 
   def read_from_console

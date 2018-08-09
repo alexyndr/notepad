@@ -1,7 +1,18 @@
+require 'date'
+
 class Post
   def initialize
     @time_now = Time.now
     @text = nil
+    @created_at = Time.now
+  end
+
+  def self.post_types
+    [Memo, Task, Link]
+  end
+
+  def self.create(index_class)
+    return post_types[index_class].new
   end
 
   def read_from_console
